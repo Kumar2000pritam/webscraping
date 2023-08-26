@@ -50,7 +50,7 @@ def submit_form():
    
 @app.route('/submit/download')
 def download():
-    filename="C:\\Users\\hp\\OneDrive\\Desktop\\python)\\app\\interview_questions.docx"
+    filename="(your file save path)\\interview_questions.docx"
     if filename:
         return send_file(filename, as_attachment=True)
     else:
